@@ -23,6 +23,6 @@ content:
     type: file
     path: src/content/about/index.md
     fields:
-      - { name: layout, type: string, hidden: true, default: layouts/base.njk }
       - { name: title, label: Title, type: string }
+      - { name: image, label: Image, type: string, default: images/author.png }
       - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
