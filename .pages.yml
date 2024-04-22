@@ -24,5 +24,8 @@ content:
     path: src/content/about/index.md
     fields:
       - { name: title, label: Title, type: string }
+      - { name: meta_title, label: Meta Title, type: string }
+      - { name: description, label: Description, type: string }      
       - { name: image, label: Image, type: string, default: images/author.png }
+      - { name: draft, label: Draft, type: boolean }
       - { name: body, label: Body, type: rich-text, options: { input: public/assets, output: /assets } }
