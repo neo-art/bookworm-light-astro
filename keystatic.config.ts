@@ -28,26 +28,5 @@ export default config({
   },
 });
 
-collections: {
-pages: collection({
-  id: String,
-  title: String,
-  meta_title: { type: String, optional: true },
-  description: { type: String, optional: true },
-  image: { type: String, optional: true },
-  layout: { type: String, optional: true },
-  slugTitle: {
-    name: {
-      label: String
-    }
-  },
-  content: {
-    label: 'Content',
-    formatting: true,
-    dividers: true,
-    links: true,
-    images: true
-  },
-});
-}
+
 
