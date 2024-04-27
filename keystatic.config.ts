@@ -40,5 +40,36 @@ export default config({
   },
 });
 
-
-
+pages: collection({
+  label: "Pages",
+  slugField: "title",
+  path: "src/content/pages/*",
+  entryLayout: "content",
+  columns: ["title", "description", "noIndex"],
+  format: { contentField: "content" },
+  schema: {
+    title: fields.slug({ name: { label: "SEO Title" } }),
+    description: fields.text({
+      label: "SEO Description",
+      multiline: true,
+    }),
+    ogImage: fields.image({
+      label: "Image",
+      directory: "src/assets/images/pages",
+      publicPath: "../../assets/images/pages/",
+    }),
+    noIndex: fields.checkbox({
+      label: "Don't index the page",
+      defaultValue: false,
+    }),
+    content: fields.mdx({
+      label: "Content",
+      options: {
+        image: {
+          directory: "src/assets/images/pages",
+          publicPath: "../../assets/images/pages/",
+        },
+      },
+    }),
+  },
+})
