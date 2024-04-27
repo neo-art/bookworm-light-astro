@@ -62,14 +62,14 @@ pages: collection({
       label: "Don't index the page",
       defaultValue: false,
     }),
-    content: fields.mdx({
-      label: "Content",
-      options: {
-        image: {
-          directory: "src/assets/images/pages",
-          publicPath: "../../assets/images/pages/",
-        },
-      },
-    }),
+    // content: fields.mdx({
+    //   label: "Content",
+    //   options: {
+    //     image: {
+    //       directory: "src/assets/images/pages",
+    //       publicPath: "../../assets/images/pages/",
+    //     },
+    //   },
+    // }),
   },
 })
