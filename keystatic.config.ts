@@ -36,6 +36,10 @@ export default config({
           defaultValue: { kind: "today" },
           label: "Date of the publication",
         }),
+        isFeatured: fields.checkbox({
+          label: "Is Featured",
+          defaultValue: false,
+        }),
         draft: fields.checkbox({ label: "Draft" }),
         authors: fields.array(
           fields.relationship({

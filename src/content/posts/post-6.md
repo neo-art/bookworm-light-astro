@@ -1,12 +1,13 @@
 ---
 title: Become a morning person with the help of alarm clock !
-featured: false
+# featured: false
 draft: false
 tags:
   - Alarm
   - Clock
 description: meta description
 ---
+
 Almost every day for the past nine or so months has felt like March 13, and that can sometimes make it difficult to want to wake up for the day ahead of you.
 
 To make a morning person out of you, the wake-up light simulates the sunrise to gradually ease you awake. This allows you to wake up more naturally rather than being jolted awake by the default iPhone alarm sound, which honestly triggers my fight or flight response.
